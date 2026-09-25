@@ -1,0 +1,43 @@
+{
+    "type": "object",
+    "properties": {
+        "uuid": {"type": "string"},
+        "timestamp": {
+            "type": "array",
+            "items": {"type": ["number", "null"]}
+        },
+        "amount": {
+            "type": "array",
+            "items": {"type": ["number", "null"]}
+        },
+        "source_ip": {
+            "type": "array",
+            "items": {"type": ["string", "null"]}
+        },
+        "dest_ip": {
+            "type": "array",
+            "items": {"type": ["string", "null"]}
+        },
+        "longitude": {
+            "type": "array",
+            "items": {"type": ["number", "null"]}
+        },
+        "latitude": {
+            "type": "array",
+            "items": {"type": ["number", "null"]}
+        },
+        "label": {
+            "type": ["string", "number", "null"]
+        }
+    },
+    "required": [
+        "uuid",
+        "timestamp",
+        "amount",
+        "source_ip",
+        "dest_ip",
+        "longitude",
+        "latitude"
+    ],
+    "additionalProperties": false
+}

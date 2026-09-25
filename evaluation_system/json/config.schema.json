@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "maxErrors": {"type": "integer"},
+        "maxConsecutiveErrors": {"type": "integer"},
+        "minNumberLabels": {"type": "integer"}
+    },
+    "required": ["maxErrors", "maxConsecutiveErrors", "minNumberLabels"]
+}

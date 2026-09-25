@@ -1,0 +1,14 @@
+{
+    "type": "object",
+    "properties": {
+        "timestamp": {"type": "integer"},
+        "system": {
+            "type": "string",
+            "enum": ["ingestion", "preparation", "segregation", "development", "classification", "evaluation"]
+        }
+    },
+    "required": [
+        "timestamp"
+    ],
+    "additionalProperties": false
+}

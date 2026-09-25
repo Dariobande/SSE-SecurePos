@@ -1,0 +1,14 @@
+{
+    "type": "object",
+    "properties": {
+        "uuid": {
+            "type": "string"
+        },
+        "label": {
+            "type": "string",
+            "enum": ["high", "moderate", "normal"]
+        }
+    },
+    "required": ["uuid", "label"],
+    "additionalProperties": false
+}

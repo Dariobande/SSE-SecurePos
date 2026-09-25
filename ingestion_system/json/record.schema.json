@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "transaction_data",
+        "network_data",
+        "location_data",
+        "label"
+      ]
+    },
+    "uuid": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "array",
+      "items": {
+        "type": ["number", "string"]
+      }
+    },
+    "amount": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "source_ip": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "ipv4"
+      }
+    },
+    "dest_ip": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "ipv4"
+      }
+    },
+    "latitude": {
+      "type": "array",
+      "items": {
+        "type": "number",
+        "minimum": -90,
+        "maximum": 90
+      }
+    },
+    "longitude": {
+      "type": "array",
+      "items": {
+        "type": "number",
+        "minimum": -180,
+        "maximum": 180
+      }
+    },
+    "label": {
+      "type": "string"
+    }
+  },
+  "required": ["type", "uuid"]
+}

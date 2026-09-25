@@ -1,0 +1,11 @@
+{
+    "maxTransactionsAmount": 10000,
+    "extractedFeatures": [
+        "mad_timestamps",
+        "mad_amounts",
+        "median_longitude",
+        "median_latitude",
+        "median_source_ip",
+        "median_desto_ip"
+    ]
+}

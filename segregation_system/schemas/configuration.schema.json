@@ -1,0 +1,18 @@
+{
+    "type": "object",
+    "properties": {
+        "minimumNumberOfSessions": {"type": "integer", "minimum": 1},
+        "balancingTolerance": {"type": "number", "minimum": 0, "maximum": 1},
+        "trainSplitPercentage": {"type": "number", "minimum": 0, "maximum": 1},
+        "validationSplitPercentage": {"type": "number", "minimum": 0, "maximum": 1},
+        "testSplitPercentage": {"type": "number", "minimum": 0, "maximum": 1}
+    },
+    "required": [
+        "minimumNumberOfSessions",
+        "balancingTolerance",
+        "trainSplitPercentage",
+        "validationSplitPercentage",
+        "testSplitPercentage"
+    ],
+    "additionalProperties": false
+}

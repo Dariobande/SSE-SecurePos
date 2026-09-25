@@ -1,0 +1,16 @@
+{
+    "type": "object",
+    "properties": {
+        "maxTransactionsAmount": {"type": "number", "minimum": 0},
+        "extractedFeatures": {
+            "type": "array",
+            "items": {"type": "string"},
+            "minItems": 1
+        }
+    },
+    "required": [
+        "maxTransactionsAmount",
+        "extractedFeatures"
+    ],
+    "additionalProperties": false
+}

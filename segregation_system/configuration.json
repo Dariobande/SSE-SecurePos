@@ -1,0 +1,7 @@
+{
+    "minimumNumberOfSessions": 100,
+    "balancingTolerance": 0.2,
+    "trainSplitPercentage": 0.7,
+    "validationSplitPercentage": 0.2,
+    "testSplitPercentage": 0.1
+}

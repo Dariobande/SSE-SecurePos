@@ -1,0 +1,104 @@
+{
+    "type": "object",
+    "properties": {
+        "serviceFlag": {"type": "boolean"},
+        "systemPhase": {
+            "type": "object",
+            "properties": {
+                "developmentPhase": {"type": "boolean"},
+                "evaluationPhaseWindow": {"type": "integer", "minimum": 1},
+                "productionPhaseWindow": {"type": "integer", "minimum": 1}
+            },
+            "required": [
+                "developmentPhase",
+                "evaluationPhaseWindow",
+                "productionPhaseWindow"
+            ],
+            "additionalProperties": false
+        },
+        "addresses": {
+            "type": "object",
+            "properties": {
+                "simulatorSystem": {
+                      "type": "object",
+                      "properties": {
+                          "ip": {"type": "string", "format": "ipv4"},
+                          "port": {"type": "integer", "minimum": 1, "maximum": 65535}
+                      },
+                      "required": ["ip", "port"],
+                      "additionalProperties": false
+                },
+                "ingestionSystem": {
+                    "type": "object",
+                    "properties": {
+                        "ip": {"type": "string", "format": "ipv4"},
+                        "port": {"type": "integer", "minimum": 1, "maximum": 65535}
+                    },
+                    "required": ["ip", "port"],
+                    "additionalProperties": false
+                },
+                "preparationSystem": {
+                    "type": "object",
+                    "properties": {
+                        "ip": {"type": "string", "format": "ipv4"},
+                        "port": {"type": "integer", "minimum": 1, "maximum": 65535}
+                    },
+                    "required": ["ip", "port"],
+                    "additionalProperties": false
+                },
+                "segregationSystem": {
+                    "type": "object",
+                    "properties": {
+                        "ip": {"type": "string", "format": "ipv4"},
+                        "port": {"type": "integer", "minimum": 1, "maximum": 65535}
+                    },
+                    "required": ["ip", "port"],
+                    "additionalProperties": false
+                },
+                "developmentSystem": {
+                    "type": "object",
+                    "properties": {
+                        "ip": {"type": "string", "format": "ipv4"},
+                        "port": {"type": "integer", "minimum": 1, "maximum": 65535}
+                    },
+                    "required": ["ip", "port"],
+                    "additionalProperties": false
+                },
+                "classificationSystem": {
+                    "type": "object",
+                    "properties": {
+                        "ip": {"type": "string", "format": "ipv4"},
+                        "port": {"type": "integer", "minimum": 1, "maximum": 65535}
+                    },
+                    "required": ["ip", "port"],
+                    "additionalProperties": false
+                },
+                "evaluationSystem": {
+                    "type": "object",
+                    "properties": {
+                        "ip": {"type": "string", "format": "ipv4"},
+                        "port": {"type": "integer", "minimum": 1, "maximum": 65535}
+                    },
+                    "required": ["ip", "port"],
+                    "additionalProperties": false
+                }
+            },
+            "required": [
+                "simulatorSystem",
+                "ingestionSystem",
+                "preparationSystem",
+                "segregationSystem",
+                "developmentSystem",
+                "classificationSystem",
+                "evaluationSystem"
+            ],
+            "additionalProperties": false
+        }
+    },
+    "required": [
+        "serviceFlag",
+        "systemPhase",
+        "addresses"
+    ],
+    "additionalProperties": false
+}
