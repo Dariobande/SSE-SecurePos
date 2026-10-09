@@ -6,7 +6,7 @@
 [![Architecture](https://img.shields.io/badge/Architecture-Service--Oriented%20%2F%20BPMN-purple.svg)](https://en.wikipedia.org/wiki/Service-oriented_architecture)
 [![Validation](https://img.shields.io/badge/Schema-JSON%20Schema%20Draft--7-yellow.svg)](https://json-schema.org/)
 
-[Project Documentation](SecurePOS.pdf) | [Architecture Schemas](shared/json/) | [Requirements](requirements.txt)
+[Project Documentation](SecurePOS.pdf) | [Requirements](requirements.txt)
 
 This repository contains the design, BPMN 2.0 workflow modeling, service-oriented architecture (SOA), and implementation of **SecurePOS**, a distributed modular platform for fraud detection and risk classification in Point of Sale (POS) environments.
 
